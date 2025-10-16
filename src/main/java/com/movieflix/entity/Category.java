@@ -1,13 +1,14 @@
 package com.movieflix.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@NoArgsConstructor
+
+@Builder
+@Getter
+@Setter
 @AllArgsConstructor
-@Data
+@NoArgsConstructor
 @Entity
 @Table(name = "category")
 public class Category {
